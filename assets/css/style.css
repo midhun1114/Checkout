@@ -67,18 +67,16 @@ display: none;
 
 }
 
-
+#schedule .nav-tabs a.active {
+  background-color: whitesmoke;
+  color: black;
+}
 a {
   color: #f82249;
   text-decoration: none;
   transition: 0.5s;
 }
 
-a:hover, a:active, a:focus {
-  color: whitesmoke;
-  outline: none;
-  text-decoration: none;
-}
 
 p {
   padding: 0;
@@ -212,6 +210,16 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
   #schedule .nav-tabs a {
     padding: 8px 3px;
+    background-color: #ffa500;
+  }
+  #schedule .nav-tabs a.active {
+    background-color: whitesmoke;
+    color: black;
+  }
+  #schedule .nav-tabs li {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0px;
   }
  
   
@@ -268,10 +276,7 @@ display: none;
   top: 159px;
 }
 
-#schedule .nav-tabs a.active {
-  background-color: whitesmoke;
-  color: black;
-}
+
 
 #schedule .sub-heading {
   text-align: center;
